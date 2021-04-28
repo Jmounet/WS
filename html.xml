@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta />
-        <meta />
-        <title></title>
-        <link />
-    </head>
 
-    <body>
-        <div>
-            <img />
-            <h1></h1>
-            <p></p>
-            <div></div>
-        </div>
+<head>
+    <meta />
+    <meta />
+    <title></title>
+    <link />
+</head>
 
-        <script> </script>
-    </body>
+<body>
+    <div>
+        <img />
+        <h1></h1>
+        <p></p>
+        <div></div>
+    </div>
+
+    <script> </script>
+</body>
 
 </html>
