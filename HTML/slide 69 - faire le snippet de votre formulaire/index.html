@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snippet formulaire</title>
 </head>
+
 <body>
-    
+    <h1>Formulaire de contact</h1>
+
+    <!-- Boutons radios pour choisir le sexe-->
+    <p>Sexe?</p>
+
+    <div>
+        <input type="radio" id="man" name="genre" value="Homme">
+        <label for="man">Homme</label>
+    </div>
+
+    <div>
+        <input type="radio" id="woman" name="genre" value="Femme">
+        <label for="Femme">Femme</label>
+    </div>
+    <br>
+    <!-- Infos -->
+    <form action="" method="GET">
+        <div>
+            <label for="name">Nom : </label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="mail">Email : </label>
+            <input type="email" name="mail" id="mail">
+        </div>
+        <div>
+            <label for="tel">Téléphone : </label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+    </form>
+    <br>
+    <!-- Liste déroulante-->
+    <label for="type">Type de client :</label>
+
+    <select name="Type de client" id="type">
+        <option value="">--Choisir une option--</option>
+        <option value="type1">type1</option>
+        <option value="type2">type2</option>
+        <option value="type3">type3</option>
+    </select>
+    <br>
+    <!-- Cases à cocher -->
+    <p>Comment vous avez-nous connu?</p>
+
+    <div>
+        <input type="checkbox" name="Choix1" id="Choix1">
+        <label for="Choix1">Choix 1</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="Choix2" id="Choix2">
+        <label for="Choix2">Choix 2</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="Choix3" id="Choix3">
+        <label for="Choix3">Choix 3</label>
+    </div>
+    <br>
+    <!-- Zone de message -->
+    <div>
+        <label for="Message">Votre message :</label><br>
+        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+    </div>
+
+    <!-- Bouton envoyer -->
+    <div>
+        <input type="submit" value="Envoyer!">
+    </div>
+
 </body>
+
 </html>
