@@ -1,11 +1,15 @@
-h1, h2 {
+/* couleur h1 h2 */
+h1,
+h2 {
     color: #32CBDD;
 }
 
-p {
+/* couleur body */
+body {
     color: #444;
 }
 
-link {
+/* couleur liens */
+a {
     color: #028DB6;
 }

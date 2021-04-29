@@ -1,0 +1,42 @@
+/*couleur du texte et du body en noir
+couleur de fond du body et des div en lightgrey */
+body,
+div {
+    color: black;
+    background-color: lightgrey;
+}
+
+/*couleur du texte de tous les paragraphes du conteneur (#id) en rouge*/
+#conteneur p {
+    color: red;
+}
+
+/*police grasse pour les paragraphes directement enfants du conteneur (#id>)*/
+#conteneur>p {
+    font-weight: bold;
+}
+
+/*couleur du texte du paragraphe qui suit directement le conteneur en vert (#id+)*/
+#conteneur+p {
+    color: green;
+}
+
+/*Les paragraphes qui suivent directement un titre de niveau 2 en majuscule*/
+h2+p {
+    text-transform: uppercase;
+}
+
+/*Les paragraphes qui suivent un élément code ET ayant le même niveau que cet élément en rose*/
+code~p {
+    color: pink;
+}
+
+/*Les div directement enfants du body en jaune*/
+body>div {
+    color: yellow;
+}
+
+/*Les div qui suivent directement un titre de niveau 1 avec une bordure verte*/
+h1+div {
+    border: solid green;
+}

@@ -1,0 +1,10 @@
+/*liens avec l'attribut target en lightgreen et en police grasse*/
+a[target] {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+/* liens avec l'attribut target="_top" avec une taille de police à 3rem*/
+a[target="_top"] {
+    font-size: 3rem;
+}
