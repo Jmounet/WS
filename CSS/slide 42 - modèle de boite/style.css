@@ -1,0 +1,11 @@
+/* Créer une div avec un titre et un paragraphe en lorem de largeur (width) 500px :
+de couleur de fond (backgroud-color) au choix
+avec une bordure (border) 15px, de type au choix, de couleur au choix
+avec une marge de 50px; */
+
+div {
+    width: 500px;
+    background-color: lightseagreen;
+    border: 15px inset brown;
+    margin: 50px;
+}

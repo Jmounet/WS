@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Ma Super Police";
+    src: url(font/MaSuperPolice.ttf);
+}
+
+/* Mettre la police contenu dans le dossier font pour les titres de niveau 1. */
+
+h1 {
+    font-family: "Ma Super Police";
+}

@@ -1,0 +1,32 @@
+/* #####
+Inline
+#### */
+
+/* Entourer le texte en gras d'un bordure rouge */
+
+b {
+    /* display: block; */
+    border: 1px solid red;
+}
+
+/* Mettre les span avec une couleur de fond rose */
+
+span {
+    background-color: pink;
+}
+
+/* #####
+Block
+#### */
+
+/* Encadrer les paragraphes d'une bordure verte */
+
+p {
+    border: 1px solid green;
+}
+
+/* Et les div aver une couleur de fond lightgrey */
+
+div {
+    background-color: lightgrey;
+}

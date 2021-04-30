@@ -1,0 +1,47 @@
+/* Mettre les div à une largeur de 500px avec une couleur de fond */
+
+div {
+    width: 500px;
+    background-color: lightsteelblue;
+}
+
+/* Mettre les h2 à 400px avec une bordure et une couleur de fond */
+
+h2 {
+    width: 400px;
+    background-color: yellowgreen;
+}
+
+/* ### Pour les paragaphes ### */
+
+/* ceux avec la classe .para1 :
+500px de large
+une bordure visible
+une couleur de fond visible
+un padding de 15px */
+
+.para1 {
+    width: 500px;
+    border: 1px solid red;
+    background-color: plum;
+    padding: 15px;
+}
+
+/* Ceux avec la classe .para2
+500px de large
+une bordure visible
+une couleur de fond visible
+une margin de 15px */
+
+.para2 {
+    width: 500px;
+    border: 1px solid yellow;
+    background-color: lime;
+    margin: 15px;
+}
+
+/* changer un box sizing à border box pour les paragraphes ayant la classe .box */
+
+.box {
+    box-sizing: border-box;
+}

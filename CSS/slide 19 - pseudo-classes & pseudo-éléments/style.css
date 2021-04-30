@@ -30,7 +30,16 @@ p::first-letter {
 }
 
 /*BONUS : Ajouter l'image avant chaque titre de niveau 1.Ajoutez une marge à droite de 6px*/
-h1::before {
+/* h1::before {
     content: url(https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/16x16/ok.png);
+    margin-right: 6px;
+} */
+/*FAUX*/
+h1::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/16x16/ok.png);
     margin-right: 6px;
 }
