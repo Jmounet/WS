@@ -1,0 +1,180 @@
+ /* Import des feuilles de styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+@import url("css/bg-color.css");
+
+/* ###################
+  VARIABLES 
+################### */
+:root {
+  --blue : #7e98a7;
+  --grey : lightgrey;
+  --dark : rgb(37, 37, 37);
+  --font-title : 'Abel', sans-serif;
+  --font : 'Open Sans', sans-serif;
+  --border-radius : 6px;
+  --breakpoint: 960px;
+}
+
+/* ###################
+  TEXT FORMAT
+  ################### */
+body {
+  color: var(--dark);
+  font-family: var(--font);
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+span {
+  color: inherit;
+}
+
+.display-1 {
+  font-size: 3.2rem;
+}
+
+.display-2 {
+  font-size: 2.8rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+/* ###################
+  COMPOSANTS
+################### */
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  border-radius: var(--border-radius);
+  color: white;
+  background-color: var(--dark);
+}
+
+.btn.blue {
+  background-color: var(--blue);
+}
+
+/* Navbar */
+
+nav {
+  color: var(--dark);
+  background-color: var(--grey);
+  /* width: 500px; */
+  /* margin-right: auto;
+  margin-left: auto; */
+  padding: .3rem .9rem ;
+  display: inline-block;
+  border-radius: var(--border-radius);
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  color: inherit;
+}
+
+nav ul li a:hover {
+  color: var(--blue);
+}
+
+/* ###################
+  BLOCS
+################### */
+section {
+  padding: 2rem 2rem 5rem 2rem;
+}
+
+section hr {
+  margin-bottom: 3rem;
+  }
+
+/* HEADER */
+header {
+  background-image: url("./img/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size: cover;
+  padding: 4rem 3rem .5rem 3rem;
+}
+
+#logo img {
+  padding: 3px;
+  background: var(--dark);
+  border: 1px solid var(--grey);
+}
+
+#logo {
+  margin-bottom: 5rem;
+}
+
+/* WELCOME */
+#welcome hr {
+  margin-bottom: 1rem;
+}
+/* COMPETENCES */
+
+#competence>div {
+  padding: 1.2rem;
+  margin-bottom: .6rem;
+  text-align: left;
+  max-width: var(--breakpoint);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#competence>div img {
+  float: left;
+  margin-right: 1rem;
+}
+#competence>div h2 {
+  margin-top: 0;
+}
+
+/* REFERENCE */
+#ref #container {
+  width: var(--breakpoint);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ref #container>div {
+  display: inline-block;
+  width: 300px;
+  background: yellow;
+  margin-right: 25px;
+}
+
+#ref #container>div:last-child {
+  margin-right: 0px;
+}
+
+/* FOOTER */
+footer {
+  padding: .5rem;
+  font-size: .8rem;
+}
+
+

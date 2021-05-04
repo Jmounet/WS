@@ -1,0 +1,186 @@
+/* Import des feuilles de styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+@import url("css/bg-color.css");
+
+/* ###---
+VARIABLES
+---### */
+
+:root {
+    --blue : #7e98a7;
+    --grey : lightgrey;
+    --dark : rgb(37, 37, 37);
+    --font-title : 'Abel', sans-serif;
+    --font : 'Open-sans', sans-serif;
+    --breakpoint : 960px;
+}
+
+
+/* ###---
+MISE EN FORME DU TEXTE
+---### */
+
+
+body {
+    font-family: var(--font);
+    color: var(--dark);
+    text-align: center;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);     
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.display-1 {
+    font-size: 3rem;
+}
+
+.display-2 {
+    font-size: 2.5rem;
+}
+.lead {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+/* ###---
+COMPONENTS
+---### */
+
+.btn {
+    background-color: var(--dark);
+    display: inline-block;
+    padding: .8rem 1rem;
+    border-radius: 6px;
+    color: white;
+}
+
+.btn.blue {
+    background-color: var(--blue);
+}
+
+nav {
+    display: inline-block;
+    background-color:var(--grey);
+    color: var(--dark);
+    border-radius: 3px;
+    padding: 0rem 4rem ;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li a {
+    color: inherit;
+}
+
+nav ul li a:hover {
+    color: var(--blue);
+}
+
+/* ###---
+BLOCS
+---### */
+
+section {
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+section hr {
+    margin-bottom: 5rem;
+}
+
+/* WELCOME */
+
+header {
+    background-image: url(./img/bg-header.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 4rem 3rem 1rem 3rem;
+}
+
+#logo img {
+    background-color: black;
+    padding: 3px;
+    border: 1px solid var(--grey);
+}
+
+#welcome hr {
+    margin-bottom: 1rem;
+}
+
+#logo {
+    margin-bottom: 80px;
+}
+
+#welcome .btn.blue {
+    margin-top: 2rem;
+}
+
+
+/* PARCOURS */
+
+#competence hr {
+    width: 800px;
+}
+
+#competence>div {
+    padding: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--breakpoint);
+    height: 120px;
+}
+
+#competence>div img {
+    float: left;
+    margin-right: 2rem;
+}
+
+#competence>div h2 {
+    margin-top: 0;
+}
+
+/* REFERENCES */
+
+#ref hr {
+    width: 750px;
+}
+
+#ref #container {
+    max-width: var(--breakpoint);
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    #ref #container>div {
+        display: inline-block;
+        width: 300px;
+        margin-right: 25px;
+    }
+    
+    #ref #container>div:last-child {
+        margin-right: 0px;
+    }
+
+    /* FOOTER */
+footer {
+    padding: .5rem;
+    font-size: .8rem;
+}
