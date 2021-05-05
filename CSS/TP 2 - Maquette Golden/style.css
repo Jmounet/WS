@@ -1,0 +1,352 @@
+/* Import reset CSS (lien de Greg) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+/* Import des fonts */
+@font-face {
+    font-family: "wisdomScript";
+    src: url("./font/WisdomScriptAJ.woff");
+}
+
+@font-face {
+    font-family: "droidSerif";
+    src: url("./font/DroidSerif.ttf") ;
+}
+
+@font-face {
+    font-family: "droidSerif-Bold";
+    src: url("./font/DroidSerif-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "droidSerif-BoldItalic";
+    src: url("./font/DroidSerif-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "roidSerif-Italic";
+    src: url("./font/DroidSerif-Italic.ttf");
+    font-style: italic;
+}
+
+/* Import de google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+
+    /* ###---
+    VARIABLES
+    ---### */
+
+:root {
+    /* FONTS */
+    --font-logo: "wisdomScript", cursive;
+    --font-title: "Montserrat", sans-serif;
+    --font-subtitle: "droidSerif", sans-serif;
+    --font-description: "droidSerif", serif;
+    /* COLORS */
+    --yellow: #fed136;
+    --black: black;
+    --grey: grey;
+    --bg-grey: #f7f7f7;
+    --bg-dark: black;
+}
+
+/* ###--- TEXT FORMAT ---### */
+
+body {
+    text-align: center;
+    color: var(--black);
+    padding: 0;
+    margin: 0;
+}
+
+/* ###--- BUTTONS ---### */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn.btn-yellow {
+    color: white;
+    background-color: var(--yellow);
+}
+
+/* ###--- SPECIAL CLASSES ---### */
+
+.bg-grey {
+    background-color: var(--bg-grey);
+}
+
+.bg-dark {
+    background-color: var(--bg-dark);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.container.column {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container > div {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 3rem;
+}
+
+.container > div:nth-child(3),
+.container > div:nth-child(6),
+.container > div:nth-child(9) {
+  margin-right: 0 ;
+}
+
+.sectionTitle > h2 {
+    font-family: var(--font-title);
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.sectionTitle > p {
+    font-family: var(--font-subtitle);
+    font-style: italic;
+    color: var(--grey);
+    margin: 0 0 3rem 0;
+}
+
+/* ICONS */
+
+.iconServ {
+    display: inline-block;
+    border: 3px solid var(--yellow);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding: .6rem;
+    padding-top: .8rem;
+    
+}
+
+.invisible {
+    display: none;
+}
+
+
+    /* ###--- 
+    HEADER
+    ---### */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    line-height: 3rem;
+    width: 960px;
+}
+
+/* LOGO */
+
+header h1 {
+    font-family: var(--font-logo);
+    color: var(--yellow);
+    margin: 0;
+}
+
+/* NAVBAR */
+
+nav{
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 1rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+    /* ###--- 
+    SECTIONS
+    ---### */
+
+/* Global */
+
+section {
+     padding: 4rem 2rem;
+}
+
+section p {
+    font-family: var(--font-subtitle);
+    color: var(--grey);
+    font-size: 1rem;
+}
+
+section h3 {
+    font-family: var(--font-subtitle);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 1rem;    
+}
+
+/* HOME */
+
+#home {    
+    background-image: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./img/bg_header.png);
+    background-size: cover;
+    color: white;
+    /* Position relative? */
+    padding-top: .5rem;
+    padding-bottom: 8rem;
+}
+
+#home .display-1 {
+    margin-top: 8rem;
+    font-family: var(--font-title);
+    font-size: 3rem;
+    font-weight: bold;
+    color: inherit;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+#home .display-2 {
+    margin-top: 8rem;
+    font-family: var(--font-subtitle);
+    font-size: 1.7rem;
+    font-style: italic;
+    color: inherit;
+    text-transform: capitalize;    
+}
+
+/* SERVICES */
+
+#services h3 {
+    margin-bottom: 1.2rem;
+}
+
+/* PORTFOLIO */
+
+.portCard {
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.portCard h3 {
+    padding-top: 1.5rem;
+}
+
+.portCard p {
+    padding-top: .4rem;
+    padding-bottom: 1.5rem;
+    font-style: italic;
+    font-size: .8rem;
+}
+
+.portCard img {
+    width: 100%;
+    height: 100%;
+}
+
+/* TEAM */
+
+.teamCard {
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.teamCard h3 {
+    padding-top: 1.5rem;
+}
+
+.teamCard p {
+    padding-top: .4rem;
+    padding-bottom: 1.5rem;
+    font-size: .8rem;
+}
+
+.teamCard > img {
+    border-radius: 50%;
+}
+
+#teamList p {
+    line-height: 1.5rem;
+}
+
+.socialTeam {
+    height: 36px;
+    line-height: 36px;
+}
+
+.socialTeam a {
+    display: inline-block;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;  
+}
+
+/* PARTNERS */
+
+#partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#partner img {
+    margin-right: 2rem;
+}
+
+#partner img:last-child {
+    margin-right: 0;
+}
+
+/* CONTACT */
+
+#contact h2 {
+    color: white;
+    background-image: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./img/map_contact.png);
+    background-size: cover;
+}

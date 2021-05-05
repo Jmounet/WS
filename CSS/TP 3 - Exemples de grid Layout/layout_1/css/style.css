@@ -1,0 +1,26 @@
+.wrapper {
+    display: grid;
+    width: 960px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        ". subhead ."
+        "mainnav content quote";
+        width: 960px;
+        column-gap: 30px;
+    }
+
+.subhead {
+    grid-area: subhead;
+}
+
+.mainnav {
+    grid-area: mainnav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.quote {
+    grid-area: quote;
+}
