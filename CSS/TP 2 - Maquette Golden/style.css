@@ -71,6 +71,7 @@ body {
     font-family: var(--font-title);
     text-decoration: none;
     border-radius: 4px;
+    border: none;
 }
 
 .btn.btn-yellow {
@@ -103,9 +104,10 @@ body {
 }
 
 .container.column {
-    width: 960px;
+   width: 960px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
 }
 
 .container > div {
@@ -238,13 +240,13 @@ section h3 {
 }
 
 #home .display-1 {
-    margin-top: 8rem;
+    margin-top: 2rem;
     font-family: var(--font-title);
     font-size: 3rem;
     font-weight: bold;
     color: inherit;
     text-transform: uppercase;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;    
 }
 
 #home .display-2 {
@@ -254,6 +256,12 @@ section h3 {
     font-style: italic;
     color: inherit;
     text-transform: capitalize;    
+}
+
+.container.column a {
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* SERVICES */
@@ -336,7 +344,7 @@ section h3 {
 }
 
 #partner img {
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 #partner img:last-child {
@@ -345,8 +353,85 @@ section h3 {
 
 /* CONTACT */
 
+#contact {   
+    background-image: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./img/map_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #contact h2 {
     color: white;
-    background-image: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./img/map_contact.png);
-    background-size: cover;
+}
+
+#contact .container {
+    min-height: 10rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#contact .container div {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 .5rem 0 0;
+}
+
+#contact .container .formLeft {
+    margin: 0 1rem 0 0;
+    
+}
+
+#contact .container input, #contact .container textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    border-radius: 3px;
+    border: none;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: var(--grey);
+}
+
+#contact .container input{
+    height: 2.5rem;
+}
+
+#contact .container textarea{
+    height: 100%;
+}
+
+
+/* ###--- 
+FOOTER 
+---### */
+
+#footer {
+    height: 4rem;
+    line-height: 4rem;    
+}
+
+#copyright {
+    color: var(--grey);
+    font-size: .9rem;
+    text-align: left;
+}
+
+#footerSocialMedias {
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 1rem;
+}
+#footerSocialMedias a {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: var(--black);
 }

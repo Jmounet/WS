@@ -140,7 +140,6 @@
                         <a href=""><img src="./img/icons/twitter-black.png" alt="twitter"></a>
                         <a href=""><img src="./img/icons/facebook-black.png" alt="facebook"></a>
                         <a href=""><img src="./img/icons/pinterest-black.png" alt="pinterest"></a>
-                        <a href=""><img src="./img/icons/google+-black.png" alt="googleplus" class="invisible"></a>
                     </div>
                 </div>
                 <div class="teamCard">
@@ -150,7 +149,6 @@
                     <div class="socialTeam">
                         <a href=""><img src="./img/icons/twitter-black.png" alt="twitter"></a>
                         <a href=""><img src="./img/icons/facebook-black.png" alt="facebook"></a>
-                        <a href=""><img src="./img/icons/pinterest-black.png" alt="pinterest" class="invisible"></a>
                         <a href=""><img src="./img/icons/google+-black.png" alt="googleplus"></a>
                     </div>
                 </div>
@@ -159,10 +157,8 @@
                     <h3>Uku Mason</h3>
                     <p>Graphic Designer</p>
                     <div class="socialTeam">
-                        <a href=""><img src="./img/icons/twitter-black.png" alt="twitter" class="invisible"></a>
                         <a href=""><img src="./img/icons/facebook-black.png" alt="facebook"></a>
                         <a href=""><img src="./img/icons/pinterest-black.png" alt="pinterest"></a>
-                        <a href=""><img src="./img/icons/google+-black.png" alt="googleplus" class="invisible"></a>
                     </div>
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quibusdam nostrum, maxime labore
@@ -188,22 +184,23 @@
                 <h2>Contact us</h2>
                 <p>Proin iaculis purus consequat sem cure.</p>
             </div>
+            
             <form action="#" method="POST">
-                <div id="formContainer"></div>
-                <div class="formLeft">
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="YOUR NAME *" required>
-                    <label for="mail"></label>
-                    <input type="email" name="mail" id="mail" placeholder="YOUR E-MAIL *">
-                    <label for="subject"></label>
-                    <input type="text" name="subject" id="subject" placeholder="SUBJECT">
-                </div>
-                <div class="formRight">
-                    <label for="message"></label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="YOUR MESSAGE *"></textarea>
+                <div class="container">
+                    <div class="formLeft">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="YOUR NAME *" required>
+                        <label for="mail"></label>
+                        <input type="email" name="mail" id="mail" placeholder="YOUR E-MAIL *" required>
+                        <label for="subject"></label>
+                        <input type="text" name="subject" id="subject" placeholder="SUBJECT" required>
+                    </div>
+                    <div class="formRight">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="YOUR MESSAGE *" required></textarea>
+                    </div>
                 </div>
                 <input class="btn btn-yellow" type="submit" value="SEND MESSAGE">
-                </div>
             </form>
         </section>
         <!-- /CONTACT -->

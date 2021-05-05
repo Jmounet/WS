@@ -1,0 +1,14 @@
+{
+  "name": "orga-sass",
+  "version": "1.0.0",
+  "description": "savoir organiser et transpiler un projet qui utilise le sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Mounet",
+  "license": "ISC",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}
