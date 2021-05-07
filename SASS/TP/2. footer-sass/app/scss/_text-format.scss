@@ -1,0 +1,34 @@
+@include headings() {
+    color: $lightgrey;
+    text-transform: uppercase;
+    font-family: $font-title;
+    letter-spacing: .1rem;
+}
+
+p,
+address,
+a,
+input,
+textarea {
+    color: $grey;
+    font-family: $font-text;
+    line-height: 1.2rem;
+}
+
+input::placeholder,
+textarea::placeholder,
+input[type="submit"] {
+    text-transform: capitalize;
+}
+
+.footer-subtitle,
+.footer-subtitle a {
+    @extend h2;
+    font-size: .7rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer-subtitle a {
+    margin: 0;
+}

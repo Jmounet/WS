@@ -1,0 +1,17 @@
+form {
+
+    input,
+    textarea {
+        padding: .8rem;
+        border: 1px solid $darkgrey;
+        border-radius: none;
+        @extend p;
+        background: transparent;
+        margin-bottom: 1rem;
+
+        &:focus {
+            border-radius: inherit;
+            box-shadow: 0 0 5px $lightgrey;
+        }
+    }
+}

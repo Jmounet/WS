@@ -1,0 +1,20 @@
+.jm-btn {
+    display: inline-block;
+
+    font-family: $font-title;
+    font-size: .8rem;
+    padding: .7rem 2.2rem;
+    border: none;
+    letter-spacing: .1rem;
+    transition: all .15s ease;
+
+    &.grey {
+        background-color: $darkgrey;
+        color: $lightgrey;
+
+        &:hover {
+            background-color: grey;
+        }
+    }
+
+}

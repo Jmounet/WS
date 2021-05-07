@@ -1,0 +1,22 @@
+{
+  "name": "2.-footer-sass",
+  "version": "1.0.0",
+  "description": "footer-sass",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass ./app/scss/style.scss ./public/css/style.css --watch",
+    "build": "sass ./app/scss/style.scss ./public/css/style.css --watch --style compressed"
+  },
+  "author": "Jim Mounet",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.12"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0"
+  }
+}

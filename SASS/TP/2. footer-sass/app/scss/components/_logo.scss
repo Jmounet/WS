@@ -1,0 +1,21 @@
+#logo {
+    display: flex;
+    // align-items: center; je centre avec le padding
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    height: 2rem;
+
+    img {
+        height: 2rem;
+        width: 2.8rem;
+        margin-right: 15px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin: 0;
+        padding-top: .6rem;
+    }
+
+}
