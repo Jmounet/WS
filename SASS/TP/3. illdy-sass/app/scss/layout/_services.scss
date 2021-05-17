@@ -1,0 +1,33 @@
+#services {
+
+    & h2 {
+        padding-top: 3rem;
+    }
+
+    & p {
+        padding-bottom: 2rem;
+
+        @media screen and (max-width: 960px) {
+            margin-left: 2rem;
+            margin-right: 2rem;            
+            }
+    }
+}
+
+
+.serv-card {
+    width: 300px;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    & p {
+        padding-top: 1rem;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+}

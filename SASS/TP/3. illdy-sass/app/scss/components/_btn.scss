@@ -1,0 +1,31 @@
+.jm-btn {
+    display: inline-block;
+    font-family: $font-text;
+    padding: .8rem 4rem;
+    border: none;
+
+    &.yellow {
+        background-color: $yellow;
+    }
+
+    &.transparent {
+        background-color: rgba(255, 255, 255, .2);
+        border: 2px solid white;
+    }
+}
+
+.jm-arrow-btn {
+    display: inline-block;
+    font-family: $font-text;
+    padding: .7rem 2.2rem;
+    border: none;
+
+    &.yellow {
+        background-color: $yellow;
+        color: white;
+    }
+
+    &.transparent {
+        color: $yellow;
+    }
+}

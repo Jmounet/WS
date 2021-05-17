@@ -1,0 +1,74 @@
+@include headings() {
+    font-family: $font-title;
+    font-weight: bold;
+}
+
+body {
+    text-align: center;
+}
+
+p,
+input,
+a,
+li {
+    color: $grey;
+    font-family: $font-text;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: .8rem;
+}
+
+#home {
+
+    a,
+    p {
+        color: white;
+    }
+}
+
+.display-1 {
+    font-size: 5rem;
+    font-weight: 700;
+
+    & span {
+        color: $yellow;
+    }
+}
+
+h2 {
+    color: $darkgrey;
+}
+
+.serv1 {
+    color: $salmon;
+}
+
+.serv2 {
+    color: $yellow;
+}
+
+.serv3 {
+    color: $violet;
+}
+
+#news {
+    h2 {
+        color: white;
+    }
+
+    h3 {
+        color: $darkgrey;
+    }
+}
+
+#main-ft h3 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#copy-ft span {
+    color: white;
+}
+

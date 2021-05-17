@@ -1,0 +1,61 @@
+.bg-dark-blue {
+    background-color: $bg-dark-blue;
+}
+
+.news-title {
+
+    & h2 {
+        padding-top: 3rem;
+    }
+
+    & p {
+        padding-bottom: 2rem;
+
+        @media screen and (max-width: 960px) {
+            margin-left: 2rem;
+            margin-right: 2rem;            
+            }
+    }
+
+    a {
+        margin-bottom: 4rem;
+    }
+
+}
+
+.news-card {
+    box-sizing: border-box;
+    width: 300px;
+    margin-right: 20px;
+    background-color: white;
+    text-align: left;
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: 600px) {
+        margin-right: 0;
+        margin-left: 0;
+                    
+        }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    & h3 {
+        font-size: 1.3em;
+        padding: 1.3rem;
+    }
+
+    & p {
+        padding: 0 2rem 1rem 1.5rem;
+    }
+
+    & a {
+        padding-bottom: 2rem;
+    }
+
+    & img {
+        width: 100%;
+    }
+}
+
